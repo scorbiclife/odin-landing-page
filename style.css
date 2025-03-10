@@ -18,7 +18,9 @@ body {
 
 /* Light text and classes that "extend" it */
 
-.text-light {
+.text-light,
+.button,
+.call-to-action {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -68,16 +70,167 @@ body {
   background-color: #e5e7eb;
 }
 
-.bg-image-placeholder {
+.image-placeholder {
   background-color: gray;
 }
 
 .button,
-.bg-call-to-action {
+.call-to-action {
   background-color: #3882f6;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 36px;
+}
+
+.text-button-strong {
+  font-weight: bold;
+}
+
+.button-call-to-action {
+  border: 2px solid white;
 }
 
 .text-subtext {
   font-size: 18px;
   color: gray;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+}
+
+/* common section container styles */
+
+.hero,
+.information,
+.section-container {
+  padding: 60px 240px;
+}
+
+.header {
+  padding: 18px 240px;
+}
+
+.footer {
+  padding: 36px 240px;
+}
+
+/* header layout */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* hero layout */
+
+.hero {
+  display: flex;
+  justify-content: stretch;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1 1 0;
+}
+
+.hero-left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  gap: 8px;
+}
+
+.image-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* information layout */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding-top: 36px;
+}
+
+.information header {
+  margin-bottom: 36px;
+}
+
+.information-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 36px;
+}
+
+.information-item {
+  width: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.information-image-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+}
+
+/* quote layout */
+
+.quote-container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.quote-citation {
+  text-align: end;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* call-to-action layout */
+
+.call-to-action {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+  padding: 36px 72px;
+}
+
+.call-to-action-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* footer layout */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
