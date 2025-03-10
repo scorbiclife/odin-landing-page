@@ -139,6 +139,7 @@ button {
 .hero {
   display: flex;
   justify-content: stretch;
+  gap: 18px;
 }
 
 .hero-left,
