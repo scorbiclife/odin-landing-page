@@ -104,6 +104,11 @@ button {
   border-radius: 8px;
 }
 
+.image-crop-center {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 /* common section container styles */
 
 .hero,
@@ -152,6 +157,17 @@ button {
   flex-flow: column nowrap;
   align-items: start;
   gap: 8px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.hero-right > img {
+  width: 100%;
+  height: 100%;
 }
 
 .image-placeholder {
